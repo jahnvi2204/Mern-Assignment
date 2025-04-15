@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* Remove place-items: center to prevent centering */
+  display: block;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Override any dark mode styles for our ShopNow app, ensuring content is visible */
+.bg-gray-800, .bg-blue-600, .bg-gray-100, .bg-white {
+  color-scheme: light;
+}
+
+.text-white, .text-gray-400, .text-gray-600, .text-gray-700, .text-gray-800, .text-gray-900 {
+  color: inherit;
+}
+
+/* Force light mode for our application regardless of system preference */
+:root {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+a:hover {
+  color: #747bff;
+}
+
+button {
+  background-color: #f9f9f9;
+}
+
+/* Ensure Tailwind classes take precedence over our base styles */
+.bg-gray-800 {
+  background-color: #1f2937 !important;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+/* Remove any max width constraints from container components */
+.max-w-7xl, .max-w-6xl, .max-w-4xl, .max-w-3xl, .max-w-2xl, .max-w-xl, .max-w-lg, .max-w-md, .max-w-sm {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Add proper container spacing for content */
+.container-content {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .container-content {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-content {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-content {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-content {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-content {
+    max-width: 1536px;
+  }
+}
