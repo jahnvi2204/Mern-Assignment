@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .task {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .task h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        .result {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+        
+        .result p {
+            margin: 5px 0;
+        }
+        
+        .array-item {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Tasks</h1>
+        
+        <!-- Task 1: Check if adult based on age -->
+        <div class="task">
+            <h2>Task 1: Age Check</h2>
+            <div class="form-group">
+                <label for="ageInput">Enter Age:</label>
+                <input type="number" id="ageInput" min="0" value="25">
+            </div>
+            <button onclick="checkAge()">Check</button>
+            <div class="result" id="task1Result"></div>
+        </div>
+        
+        <!-- Task 2: Perform operations with x and y -->
+        <div class="task">
+            <h2>Task 2: Arithmetic Operations</h2>
+            <div class="form-group">
+                <label for="xInput">Enter x:</label>
+                <input type="number" id="xInput" value="10">
+            </div>
+            <div class="form-group">
+                <label for="yInput">Enter y:</label>
+                <input type="number" id="yInput" value="5">
+            </div>
+            <button onclick="performOperations()">Calculate</button>
+            <div class="result" id="task2Result"></div>
+        </div>
+        
+        <!-- Task 3: Check if number is even or odd -->
+        <div class="task">
+            <h2>Task 3: Even or Odd Check</h2>
+            <div class="form-group">
+                <label for="numberInput">Enter a Number:</label>
+                <input type="number" id="numberInput" value="7">
+            </div>
+            <button onclick="checkEvenOdd()">Check</button>
+            <div class="result" id="task3Result"></div>
+        </div>
+        
+        <!-- Task 4: Create array with numbers -->
+        <div class="task">
+            <h2>Task 4: Create Array</h2>
+            <div class="form-group">
+                <label for="arrayLengthInput">Enter Length of Array:</label>
+                <input type="number" id="arrayLengthInput" min="1" max="20" value="5">
+            </div>
+            <button onclick="createArray()">Generate Array</button>
+            <div class="result" id="task4Result"></div>
+        </div>
+        
+        <!-- Task 5: Square function -->
+        <div class="task">
+            <h2>Task 5: Square Function</h2>
+            <div class="form-group">
+                <label for="squareInput">Enter a Number to Square:</label>
+                <input type="number" id="squareInput" value="8">
+            </div>
+            <button onclick="squareNumber()">Calculate Square</button>
+            <div class="result" id="task5Result"></div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
